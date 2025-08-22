@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Loud 2024 - Miami</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <script>
+        let nombre = prompt("Introduce tu nombre para una experiencia personalizada:");
+    </script>
+
+    <header>
+    <div class="header-top">
+        <div class="fecha-evento">
+            <p>DECEMBER 13-15, 2024<br>ALL AGES</p>
+        </div>
+        <h1 class="titulo">Rolling Loud Miami 2024</h1>
+    <nav>
+        <ul>
+            <li><a href="#cartelera">Cartelera</a></li>
+            <li><a href="#mapa">Ubicación</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <body>
+    <div id="bienvenida">
+        <script>
+            document.write(`<p>¡Bienvenido, ${nombre}! Prepárate para Rolling Loud 2024</p>`);
+        </script>
+    </div>
+
+    <section id="cartelera">
+        <h2 class="titulo">¡Grandes Apariciones!</h2>
+        <div class="artista">
+            <h3>Future</h3>
+            <a href="future.html"><img src="https://blogs-images.forbes.com/natalierobehmed/files/2014/09/10414614_914616008564092_3680240450687688598_n.jpg" alt="Foto de Future" class="artista-img"></a>
+        </div>
+        <div class="artista">
+            <h3>Travis Scott</h3>
+            <a href="travisscott.html"><img src="https://wallpaperaccess.com/full/2688040.jpg" alt="Foto de Travis Scott" class="artista-img"></a>
+        </div>
+        <div class="artista">
+            <h3>Playboy Carti</h3>
+            <a href="playboycarti.html"><img src="https://wallpapers.com/images/featured/playboi-carti-o1duxv134a98qd2w.jpg" alt="Foto de Playboy Carti" class="artista-img"></a>
+        </div>
+    </section>
+
+    <section id="precios">
+        <h2 class="titulo">Precios</h2>
+        <table class="tabla-precios" border="1">
+            <thead>
+                <tr>
+                    <th>Tipo de Entrada</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Normal</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Niño</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Estudiante</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>VIP</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <section id="registro">
+        <h2 style="text-align: center;" class="titulo">Registro para la compra de entradas</h2>
+        <div class="registro-contenedor">
+        <form onsubmit="confirmarCompra(event)">
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br>
+
+            <label for="entrada">Tipo de Entrada:</label>
+            <select id="entrada" name="entrada" required>
+                <option value="normal">Normal</option>
+                <option value="nino">Niño</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="vip">VIP</option>
+            </select><br>
+
+            <label for="cantidad">Número de Entradas:</label>
+            <input type="number" id="cantidad" name="cantidad" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+
+            <label for="comentarios">Comentarios Adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios"></textarea><br>
+
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los Términos y Condiciones</label><br><br><br>
+
+            <button type="reset">Resetear</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    </section>
+
+     <section id="mapa">
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.0844554465553!2d-80.23889368498953!3d25.957862483570598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acdb0ecac383%3A0xc28c5d2b3e45e32!2sHard%20Rock%20Stadium!5e0!3m2!1sen!2sus!4v1618362942147!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+</body>
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, sigue nuestras redes sociales:</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function confirmarCompra(event) {
+            event.preventDefault();
+            let confirmacion = confirm("¿Deseas confirmar la compra de tus entradas?");
+            if (confirmacion) {
+                alert("Gracias por tu compra");
+                console.log("Confirmación de compra enviada al correo.");
+            } else {
+                alert("Compra cancelada.");
+            }
+        }
+    </script>
+</body>
+</html>

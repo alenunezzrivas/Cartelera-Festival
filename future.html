@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future - Rolling Loud 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .artista {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .banner-artista {
+            background-image: url('https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1627681436/bgvlhnmlrwyhm2xwdock.jpg'); /* Cambia a la URL de la imagen del banner */
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 242, 255);
+            padding: 20px;
+            text-align: center;
+            text-shadow: 4px 4px 0 rgb(255, 111, 217),
+                        -4px -4px 0 rgb(255, 111, 217),
+                        4px -4px 0 rgb(255, 111, 217),
+                        -4px 4px 0 rgb(255, 111, 217);
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .banner-artista h1{
+            font-size: 80px;
+        }
+
+
+.discografia {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.album {
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+}
+
+.album-portada {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+}
+
+.album p {
+    margin-top: 8px;
+    font-size: 1.2em;
+}
+
+        .imagenes-container {
+            width: 20%;
+            height: fit-content;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .imagenes-container img {
+            width: 100%;
+            height: auto;
+            margin: 5px 0;
+        }
+
+        .video-container {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="artista">
+        <div class="banner-artista">
+            <h1>FUTURE</h1>
+        </div>
+
+        <br><br>
+
+        <h2 style="color: rgb(255, 111, 217);;">Discografía</h2>
+        <div class="discografia">
+            <div class="album-container">
+                <div class="album">
+                    <img src="https://www.lahiguera.net/musicalia/artistas/future/disco/7035/future_ds2-portada.jpg" alt="DS2" class="album-portada">
+                    <p style>DS2</p>
+                </div>
+                <div class="album">
+                    <img src="https://www.lahiguera.net/musicalia/artistas/future/disco/8227/future_hndrxx-portada.jpg" alt="HNDRXX" class="album-portada">
+                    <p>HNDRXX</p>
+                </div>
+                <div class="album">
+                    <img src="https://www.lahiguera.net/musicalia/artistas/future/disco/9607/future_future_hndrxx_presents_the_wizrd-portada.jpg" alt="The WIZRD" class="album-portada">
+                    <p>The WIZRD</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h2 style="color: rgb(255, 111, 217);">LIVE</h2>
+            <iframe src="https://www.youtube.com/embed/66fQEaBoNnI" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="imagenes-container">
+        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F01%2Ffuture-back-to-the-basics-music-video-stream-000.jpg?w=960&cbr=1&q=90&fit=max" alt="Imagen 1">
+        <img src="https://www.billboard.com/wp-content/uploads/2023/04/do-not-reuse-Future-cr-Amanda-Gorman-billboard-1548.jpg" alt="Imagen 2"> 
+        <img src="https://vinyleorecords.com/wp-content/uploads/2023/02/35ee7b4440611388c1ca6e4c97059d5d.jpg" alt="Imagen 3">
+        <img src="https://www.billboard.com/wp-content/uploads/2022/11/cover-future-billboard-2022-bb15-david-needleman-01-1240.jpg?w=683" alt="Imagen 4">
+    </div>
+</body>
+</html>
+
